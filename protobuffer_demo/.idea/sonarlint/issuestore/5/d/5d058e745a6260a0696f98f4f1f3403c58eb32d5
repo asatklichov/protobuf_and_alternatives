@@ -1,0 +1,48 @@
+
+f
+java:S11928"KDefine a constant instead of duplicating this literal "
+ --- --- " 3 times.(å÷²çÿÿÿÿÿ
+]
+java:S1192@"GDefine a constant instead of duplicating this literal "----==" 6 times.(¢ñŠë
+a
+java:S1301K"KReplace this "switch" statement by "if" statements to increase readability.(œŠã
+b
+java:S1301’"KReplace this "switch" statement by "if" statements to increase readability.(œŠã
+N	java:S106,"9Replace this use of System.out or System.err by a logger.(ĞÉ”
+Z
+java:S21472"DCombine this catch with the one at line 48, which has the same body.(ï­£Ä
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(„¢©¯
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(å÷²çÿÿÿÿÿ
+[
+java:S2147g"ECombine this catch with the one at line 101, which has the same body.(ï­£Ä
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(Ê…œŞûÿÿÿÿ
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(Ãô¸£úÿÿÿÿ
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(¢ñŠë
+N	java:S106A"9Replace this use of System.out or System.err by a logger.(½‚œî
+N	java:S106B"9Replace this use of System.out or System.err by a logger.(÷ü½
+N	java:S106C"9Replace this use of System.out or System.err by a logger.(…šÔà
+S	java:S106D"9Replace this use of System.out or System.err by a logger.(ª¸¾’ûÿÿÿÿ
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(’Íäøÿÿÿÿ
+S	java:S106H"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106J"9Replace this use of System.out or System.err by a logger.(³æ“ó
+n	java:S131K"YComplete cases by adding the missing enum constants or add a default case to this switch.(œŠã
+S	java:S106M"9Replace this use of System.out or System.err by a logger.(·šã‚şÿÿÿÿ
+N	java:S106P"9Replace this use of System.out or System.err by a logger.(é®’ƒ
+S	java:S106V"9Replace this use of System.out or System.err by a logger.(å÷²çÿÿÿÿÿ
+S	java:S106W"9Replace this use of System.out or System.err by a logger.(¢ñû¦ûÿÿÿÿ
+N	java:S106^"9Replace this use of System.out or System.err by a logger.(ÆÃşí
+N	java:S106b"9Replace this use of System.out or System.err by a logger.(™ƒƒá
+N	java:S106~"9Replace this use of System.out or System.err by a logger.(ĞÉ”
+\
+java:S2147„"ECombine this catch with the one at line 130, which has the same body.(ï­£Ä
+O	java:S106‡"9Replace this use of System.out or System.err by a logger.(ÖÊÊØ
+T	java:S106Š"9Replace this use of System.out or System.err by a logger.(å÷²çÿÿÿÿÿ
+\
+java:S2147œ"ECombine this catch with the one at line 154, which has the same body.(ï­£Ä
+T	java:S106"9Replace this use of System.out or System.err by a logger.(Ãô¸£úÿÿÿÿ
+O	java:S106‘"9Replace this use of System.out or System.err by a logger.(³æ“ó
+o	java:S131’"YComplete cases by adding the missing enum constants or add a default case to this switch.(œŠã
+O	java:S106”"9Replace this use of System.out or System.err by a logger.(éä©Ø
+O	java:S106—"9Replace this use of System.out or System.err by a logger.(Ü„ı°
+?
+java:S1068¨"(Remove this unused "name" private field.(Ë¥¼

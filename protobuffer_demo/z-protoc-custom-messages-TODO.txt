@@ -1,0 +1,47 @@
+
+
+
+byte ?
+HashMap ?
+
+static? instance?
+		InputStream?
+		OutputStream?
+
+final static?
+
+
+		public static final int GT_M_UPD = 0x01; /* BEING UPDATED
+
+		protected byte[] IPAddress = new byte[16];
+		public static final String[] FILE_TYPE_NAMES
+
+		public static final byte[] FILE_TYPES
+
+  protected ArrayList<DebugMessage> debugmessages = new ArrayList<DebugMessage>();
+
+protected ByteBuffer buffer = null;
+
+
+protected Object object;
+
+public static final int COBOL = 0x20;
+	public static final int ASM = 0x10;
+	public static final int PL1 = 0x80;
+
+
+public Calendar getTimeStamp() {
+		return HexUtil.TimeStamp(root.getAttribute(XMLConstants.TIMESTAMP));
+	}
+
+
+
+services?
+Protocol Buffers are similar to the Apache Thrift, Ion, and Microsoft Bond protocols. Offering a concrete RPC protocol stack to use for defined services called gRPC.[5]
+
+
+
+
+proto2-JSOn-types
+https://protobuf.dev/programming-guides/proto2/#updating
+

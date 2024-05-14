@@ -1,0 +1,1 @@
+C:\workspace-17\tutorials\protobuffer -I=src/main/resources --java_out=src/main/java addressbook.proto

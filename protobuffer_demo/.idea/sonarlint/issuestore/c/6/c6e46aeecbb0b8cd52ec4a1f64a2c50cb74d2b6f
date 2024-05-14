@@ -1,0 +1,15 @@
+
+L
+java:S1481"*Remove this unused "email" local variable.(ıŸ÷ıÿÿÿÿ8÷Íã–ã1
+I
+java:S1481"'Remove this unused "id" local variable.(¸‘í˜ûÿÿÿÿ8÷Íã–ã1
+F
+java:S1481")Remove this unused "name" local variable.(çÄíÈ8÷Íã–ã1
+Z	java:S1069"9Replace this use of System.out or System.err by a logger.(°Ÿœ¤úÿÿÿÿ8÷Íã–ã1
+Z	java:S106@"9Replace this use of System.out or System.err by a logger.(‘ßÉåúÿÿÿÿ8†Îã–ã1
+U	java:S106J"9Replace this use of System.out or System.err by a logger.(ã×û¸8†Îã–ã1
+U	java:S106N"9Replace this use of System.out or System.err by a logger.(ÆÀûı8†Îã–ã1
+Z	java:S106["9Replace this use of System.out or System.err by a logger.(°éˆÜşÿÿÿÿ8†Îã–ã1
+]	java:S125Y"<This block of commented-out lines of code should be removed.(ØŞåòşÿÿÿÿ8†Îã–ã1
+X
+java:S1128";Remove this unused import 'myProtobufNS.AdamAtaOuterClass'.(Óû·8µ—ÿ–ã1

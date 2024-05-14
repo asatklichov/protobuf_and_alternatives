@@ -1,0 +1,46 @@
+syntax = "proto3";
+/*
+The package here is used for conflict resolution if, say, we have multiple classes/members with same name.
+ */
+package tutorial;
+option java_package = "net.sahet.tt.point.greeting";
+
+message Greet {
+  string greeting = 1;
+  //lower_snake_case is good
+  string user_name = 2;
+
+  /*
+  These are the attributes of the Greet class along with the data type and the position of the tag in the schema.
+  If a new tag is to be added, it should have "3" as the position. Note that this position integer is
+  important to ensure that the actual data is compact and there is scope of schema evolution.
+   */
+}
+
+
+message Theater {
+  string name = 1;
+  string address = 2;
+
+  int32 total_capcity = 3;
+  int64 mobile = 4;
+  float base_ticket_price = 5;
+
+  bool drive_in = 6;
+
+  enum PAYMENT_SYSTEM {
+    CASH = 0;
+    CREDIT_CARD = 1;
+    DEBIT_CARD = 2;
+    APP = 3;
+  }
+
+  PAYMENT_SYSTEM payment = 7;
+  repeated string snacks = 8;
+  map<string, int32> movieTicketPrice = 9;
+  TheaterOwner owner = 10;
+}
+message TheaterOwner{
+  string name = 1;
+  string address = 2;
+}

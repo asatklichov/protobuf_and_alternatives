@@ -1,0 +1,38 @@
+// Example IDL file for our monster's schema.
+//https://flatbuffers.dev/flatbuffers_guide_tutorial.html
+
+namespace MyGame.Sample;
+ 
+enum Color:byte { Red = 0, Green, Blue = 2 }
+
+ //Unions share a lot of properties with enums, but instead of new names for constants, you use names of tables.
+ //Unions are a good way to be able to send multiple message types as a FlatBuffer.
+union Equipment { Weapon } // Optionally add more tables.
+
+//Similar to a table, only now none of the fields are optional (so no defaults either)
+// Structs use less memory than tables and are even faster to access
+struct Vec3 {
+  x:float;
+  y:float;
+  z:float;
+}
+ 
+table Monster {
+  pos:Vec3; // Struct.
+  mana:short = 150;
+  hp:short = 100;
+  name:string;
+  friendly:bool = false (deprecated);
+  inventory:[ubyte];  // Vector of scalars.
+  color:Color = Blue; // Enum.
+  weapons:[Weapon];   // Vector of tables.
+  equipped:Equipment; // Union.
+  path:[Vec3];        // Vector of structs.
+}
+ 
+table Weapon {
+  name:string;
+  damage:short;
+}
+ 
+root_type Monster;

@@ -1,0 +1,74 @@
+https://github.com/real-logic/simple-binary-encoding/wiki
+
+https://github.com/real-logic/simple-binary-encoding/wiki/Java-Users-Guide
+
+https://www.baeldung.com/java-sbe
+
+https://github.com/FIXTradingCommunity/fix-simple-binary-encoding
+
+<?xml version="1.0" encoding="UTF-8"?>
+<sbe:messageSchema xmlns:sbe="http://fixprotocol.io/2016/sbe"
+  package="com.baeldung.sbe.stub" id="1" version="0" semanticVersion="5.2"
+  description="A schema represents stock market data.">
+    <types>
+        <composite name="messageHeader"
+          description="Message identifiers and length of message root.">
+            <type name="blockLength" primitiveType="uint16"/>
+            <type name="templateId" primitiveType="uint16"/>
+            <type name="schemaId" primitiveType="uint16"/>
+            <type name="version" primitiveType="uint16"/>
+        </composite>
+        <enum name="Market" encodingType="uint8">
+            <validValue name="NYSE" description="New York Stock Exchange">0</validValue>
+            <validValue name="NASDAQ"
+              description="National Association of Securities Dealers Automated Quotations">1</validValue>
+        </enum>
+        <type name="Symbol" primitiveType="char" length="4" characterEncoding="ASCII"
+          description="Stock symbol"/>
+        <composite name="Decimal">
+            <type name="mantissa" primitiveType="uint64" minValue="0"/>
+            <type name="exponent" primitiveType="int8"/>
+        </composite>
+        <enum name="Currency" encodingType="uint8">
+            <validValue name="USD" description="US Dollar">0</validValue>
+            <validValue name="EUR" description="Euro">1</validValue>
+        </enum>
+        <composite name="Quote"
+          description="A quote represents the price of a stock in a market">
+            <ref name="market" type="Market"/>
+            <ref name="symbol" type="Symbol"/>
+            <ref name="price" type="Decimal"/>
+            <ref name="currency" type="Currency"/>
+        </composite>
+    </types>
+    <sbe:message name="TradeData" id="1" description="Represents a quote and amount of trade">
+        <field name="quote" id="1" type="Quote"/>
+        <field name="amount" id="2" type="uint16"/>
+    </sbe:message>
+</sbe:messageSchema>
+
+
+When Is SBE (Not) Useful?
+The power of SBE originates from its message structure. It’s optimized for sequential access to data. Hence, SBE is well suited for fixed-size data like numbers, bitsets, enums, and arrays.
+
+A common use case for SBE is financial data streaming — mostly containing numbers and enums — which SBE is specifically designed for.
+
+e.g. GOOD for DHL transport message like
+a bunchcard-message ....
+
+On the other hand, SBE isn’t well suited for variable-length data types like string and blob. The reason for that is we most likely don’t know the exact data size ahead. Accordingly, this will end up with additional calculations at the streaming time to detect the boundaries of data in a message. Not surprisingly, this can bite our business if we’re talking about milliseconds latency.
+
+Not good-for-our case because of variable-length dtaa types like string or BLOB
+-------------------
+https://en.wikipedia.org/wiki/Backtracking#:~:text=Backtracking%20is%20a%20class%20of,be%20completed%20to%20a%20valid
+
+
+
+
+
+
+Backtracking is a class of algorithms for finding solutions
+to some computational problems, notably constraint satisfaction problems,
+ that incrementally builds candidates to the solutions, and abandons a
+ candidate ("backtracks") as soon as it determines that the candidate cannot possibly be completed to a valid solution
+

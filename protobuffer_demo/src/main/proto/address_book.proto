@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package myProtobufNS;
+
+option java_package = "net.sahet.protobuf.messages";
+
+//as java_outer_classname file name used with Java style
+//option java_outer_classname = "AddressBookProtos";
+message Company {
+	string name = 1;
+	int32 id = 2;
+	string email = 3;
+	repeated string numbers = 4;
+}
+
+message AddressBook {
+	repeated Company company = 1;
+}

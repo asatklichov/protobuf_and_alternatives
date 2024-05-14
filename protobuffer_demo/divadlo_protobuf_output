@@ -1,0 +1,14 @@
+
+
+Mollanepes2
+(type.googleapis.com/myCompundDT.Employee
+John2
+&type.googleapis.com/myCompundDT.Viewer
+Jane3
+(type.googleapis.com/myCompundDT.Employee
+Simon4
+&type.googleapis.com/myCompundDT.Viewer
+
+Janiceú7
+(type.googleapis.com/myCompundDT.Employee
+	ANY-Simon

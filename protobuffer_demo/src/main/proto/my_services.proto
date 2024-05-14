@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+
+//The .proto file starts with a package declaration, which helps to prevent naming conflicts between different projects.
+//Even if you do provide a java_package, you should still define a normal package as well to avoid name collisions in the Protocol Buffers
+package myServicesNS;
+
+option java_package = "net.sahet.protobuf.my.services";
+
+option java_multiple_files = true;
+option java_generic_services = true; //this should generate gPRC interface
+
+
+/*
+Services
+If your .proto defines an RPC service, you should use PascalCase (with an initial capital) for both the service name and any RPC method names:
+
+ Defining Services
+If you want to use your message types with an RPC (Remote Procedure Call) system,
+you can define an RPC service interface in a .proto file and the protocol
+buffer compiler will generate service interface code and stubs in your chosen language.
+
+The most straightforward RPC system to use with protocol buffers is
+gRPC: a language- and platform-neutral open source RPC system developed at Google.
+*/
+
+service FooService {
+	rpc GetSomething(RequestObj) returns (ResponseObj);
+}
+
+message RequestObj {
+	 string message =1;
+}
+
+
+message ResponseObj {
+	string respond =1;
+}
+
+
+service AnInterface {
+	rpc someMethod (SomeRequest) returns (SomeResponse) { }
+	rpc secondMethod (SecondRequest) returns (stream SecondResponse) { }
+}
+
+message SomeRequest {  }
+message SomeResponse {  }
+
+message SecondRequest {  }
+message SecondResponse {  }

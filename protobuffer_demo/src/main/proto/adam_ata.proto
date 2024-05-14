@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package myProtobufNS;
+
+// If you don’t specify this explicitly, it simply matches the package name given by the package declaration, but these names usually aren’t appropriate Java package names (since they usually don’t start with a domain name).
+//option java_package = "net.sahet.protobuf.messages";
+
+message AdamAta {
+	int32 id = 1;
+	string name = 2 ; //[default = "Adam"] supported with proto2
+	string email = 3;
+
+	bytes myBytes = 4; //ByteString
+	repeated bytes myByteList =5; //List<ByteString>
+
+	//boolean
+	bool available = 6;
+
+
+}
+

@@ -1,0 +1,15 @@
+
+[
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(åâ â
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(ß´•£
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(¹Ñäéûÿÿÿÿ
+Z
+java:S2147="DCombine this catch with the one at line 59, which has the same body.(ï­£Ä
+V	java:S1252"<This block of commented-out lines of code should be removed.(Å½ŠØùÿÿÿÿ
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(Ÿìû‚øÿÿÿÿ
+V	java:S1258"<This block of commented-out lines of code should be removed.(Õè­ˆúÿÿÿÿ
+Z
+java:S2147U"DCombine this catch with the one at line 83, which has the same body.(ï­£Ä
+N	java:S106O"9Replace this use of System.out or System.err by a logger.(×í×Ì
+M	java:S106P"9Replace this use of System.out or System.err by a logger.(†×è
+V	java:S125Q"<This block of commented-out lines of code should be removed.(ÌÍ÷žüÿÿÿÿ

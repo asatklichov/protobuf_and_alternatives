@@ -1,0 +1,79 @@
+syntax = "proto3";
+
+
+
+import "google/protobuf/any.proto";
+
+
+package myCompundDT; //;) Compound is an algorithmic, autonomous interest rate protocol built for developers, to unlock a universe of open financial applications.
+option java_package =  "net.sahet.tt.point.compound";
+option java_multiple_files = true;
+
+
+
+/* OneOf - We pass a few parameters to this OneOf data type and Protobuf ensures that only one of them is set.
+  If we set one of them and try to set the other one, the first attribute gets reset.
+  Contains information about the available employees
+ */
+message Divadlo {
+	string name = 1;
+	string address = 2;
+
+	//user (client) later decide what to pass
+	repeated google.protobuf.Any peopleInside = 3;
+
+	//server (or API provider) will decide what to choose client
+	oneof availableEmployees {
+		int32 count = 4;
+		string experts = 5;
+		int32 newVal = 46;
+		google.protobuf.Any anyBody = 63;
+		LegacyWrapper one_of_legacy = 77;
+	}
+
+	LegacyWrapper member_legacy2 = 78;
+
+	oneof test_oneof {
+		string pass = 44;
+		bool id = 45;
+	}
+
+
+	//to mak
+	// e dafault value ???
+	int32 x = 7;
+	oneof v1 {
+		int32 value1 = 8;
+		bool  value2 = 9;
+		string myTxt = 11;
+	}
+}
+
+message LegacyWrapper {
+	bytes wrapped_buffer = 1;
+}
+
+message Employee {
+	string name = 1;
+}
+
+message Viewer {
+	string name = 1;
+	int32 age = 2;
+}
+
+
+
+message KeyMsg {
+	oneof KeyMsgOneOf {
+		string name = 1;
+		ComplexKey complexName= 2;
+	}
+}
+
+
+//one of example
+message ComplexKey {
+	string name = 1;
+	int32 domainId = 2;
+}

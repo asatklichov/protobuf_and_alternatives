@@ -1,0 +1,29 @@
+
+https://protobuf.dev/support/migration/
+
+https://stackoverflow.com/questions/33204321/upgrading-protobuf-from-version-2-to-3-incompatible-with-protobuf-default-valu
+
+
+message Record {
+  required uint32 fileno = 1;               
+  required uint64 pos = 2;                  
+  optional uint64 bmsPos = 3 [default = 0]; 
+  optional uint32 scanMode = 4 [default = 9999];  
+}
+
+now in proto-3 must be:
+
+message Record {
+  uint32 fileno = 1;               
+  uint64 pos = 2;                  
+  uint64 bmsPos = 3; 
+  uint32 scanMode = 4;  
+}
+
+
+- No optional or required keyword in proto3
+- proto3 does not support extensions
+- proto3 enum definition must have ZERO value at first 
+- In both proto-2 and proto-3, missing values aren't sent in the message. But the proto-3 API doesn't tell you if the default value is in the message or not, it just tells you the value.
+
+

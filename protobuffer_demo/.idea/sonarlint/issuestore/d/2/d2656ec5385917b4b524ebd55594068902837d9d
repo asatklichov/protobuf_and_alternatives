@@ -1,0 +1,31 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(…†Ü—üÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(›Ã¯¯øÿÿÿÿ
+Z
+java:S2147"DCombine this catch with the one at line 28, which has the same body.(ï­£Ä
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(¯¥ƒñ
+M	java:S106#"9Replace this use of System.out or System.err by a logger.(“œ‹
+Z
+java:S2147+"DCombine this catch with the one at line 41, which has the same body.(ï­£Ä
+M	java:S106("9Replace this use of System.out or System.err by a logger.(”‘è8
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(’ëï¹þÿÿÿÿ
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(åù…™
+P	java:S1253"<This block of commented-out lines of code should be removed.(Àà§Q
+N	java:S106E"9Replace this use of System.out or System.err by a logger.(ˆ÷·˜
+Z
+java:S2147K"DCombine this catch with the one at line 73, which has the same body.(ï­£Ä
+S	java:S106N"9Replace this use of System.out or System.err by a logger.(žƒâåûÿÿÿÿ
+N	java:S106Q"9Replace this use of System.out or System.err by a logger.(’¢³¨
+Z
+java:S2147Y"DCombine this catch with the one at line 87, which has the same body.(ï­£Ä
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(¤ý×Ã
+N	java:S106t"9Replace this use of System.out or System.err by a logger.(ˆ÷·˜
+S	java:S106y"9Replace this use of System.out or System.err by a logger.(žƒâåûÿÿÿÿ
+O	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(ã×û¸
+O	java:S106‡"9Replace this use of System.out or System.err by a logger.(ÆÀûý
+T	java:S106”"9Replace this use of System.out or System.err by a logger.(ÑÙ±Ïþÿÿÿÿ
+W	java:S125“"<This block of commented-out lines of code should be removed.(ØÞåòþÿÿÿÿ
+J
+java:S1128"4Remove this unused import 'com.google.protobuf.Any'.(µÞ™Ø
+J
+java:S1128"4Remove this unused import 'java.util.stream.Stream'.(ó÷Ž”

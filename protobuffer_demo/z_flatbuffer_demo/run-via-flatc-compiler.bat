@@ -1,0 +1,1 @@
+flatc --java schema.fbs

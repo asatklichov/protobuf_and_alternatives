@@ -1,0 +1,37 @@
+
+<Course>
+	<id>1</id>
+	<course_name>REST with Spring</course_name>
+	<student>
+		<id>1</id>
+		<first_name>John</first_name>
+		<last_name>Doe</last_name>
+		<email>john.doe@baeldung.com</email>
+		<phone>
+			<number>123456</number>
+		</phone>
+	</student>
+	<student>
+		<id>2</id>
+		<first_name>Richard</first_name>
+		<last_name>Roe</last_name>
+		<email>richard.roe@baeldung.com</email>
+		<phone>
+			<number>234567</number>
+			<type>LANDLINE</type>
+		</phone>
+	</student>
+	<student>
+		<id>3</id>
+		<first_name>Jane</first_name>
+		<last_name>Doe</last_name>
+		<email>jane.doe@baeldung.com</email>
+		<phone>
+			<number>345678</number>
+		</phone>
+		<phone>
+			<number>456789</number>
+			<type>LANDLINE</type>
+		</phone>
+	</student>
+</Course>
